@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Dropdown Menus</title>
+	<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to University of Hyderabad!</h1>
+		<form id="faculty-form">
+			<label for="department">Department:</label>
+			<select id="department" name="department" onchange="populateFaculty()">
+				<option value=""></option>
+				<option value="scis">SCIS</option>
+				<option value="sls">SLS</option>
+				<option value="maths">Mathematics</option>
+			</select>
+			<label for="faculty">Faculty:</label>
+			<select id="faculty" name="faculty"></select>
+      <button type="button" onclick="submitForm()">Submit</button>
+		</form>
+		<div id="message"></div>
+	</div>
+
+	<script src="myscript.js"></script>
+</body>
+</html>

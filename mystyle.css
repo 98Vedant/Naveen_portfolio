@@ -1,0 +1,104 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+label {
+  margin-right: 10px;
+}
+select {
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#faculty-info {
+  display: none;
+  margin-top: 30px;
+}
+#faculty-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#faculty-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #facultyInfo {
+    margin: 20px;
+  }
+  
+  #facultyInfo h2 {
+    margin-bottom: 10px;
+  }
+  
+  #facultyInfo p {
+    font-style: italic;
+  }
+  
