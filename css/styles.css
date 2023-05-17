@@ -85,6 +85,43 @@
 *::after {
   box-sizing: border-box;
 }
+#publications {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.publications-list {
+  margin-top: 50px;
+}
+
+
+
+.publications-list li {
+  list-style-type: none;
+  counter-increment: publication-counter;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.publications-list li:before {
+  content: counter(publication-counter);
+  color: #0088cc;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+}
+
+
+.publications-list li:last-child:before {
+  color: #ccc;
+}
+
+.publications-list li:last-child:after {
+  display: none;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -6675,7 +6712,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #fff !important;
-  background-color: RGBA(244, 98, 58, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(144,238,144 var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -8145,7 +8182,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(194, 180, 144) !important;
+  background-color: #fdf1d3 !important;
 }
 
 .bg-secondary {
@@ -10956,13 +10993,12 @@ header-image{
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-image: url('img1.jpg');
   background: linear-gradient(to bottom, rgba(67, 183, 174) 0%, rgba(172, 183, 174) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background-color: #f8f8f8;
+  background-color: #fff;
 
 }
 header.masthead h1, header.masthead .h1 {

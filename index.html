@@ -7,6 +7,13 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Naveen - Portfio</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap Icons-->
@@ -19,6 +26,20 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Override Bootstrap Carousel styles */
+        .carousel {
+            background: none;
+        }
+
+        .carousel-inner {
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            transition: none;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -31,33 +52,79 @@
     </section>
     <!-- Navigation-->
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">UOH</a>
+    <header class="masthead">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">UOH</a>
 
 
 
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#head1">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#teachings">Teachings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Research Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Hobby</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#head1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#teachings">Teachings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Research Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Hobby</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+                <li data-target="#header-carousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img1.jpg" alt="Image 1" style="height: 570px; width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img2.jpg" alt="Image 2" style="height: 570px; width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img3.jpg" alt="Image 3" style="height: 570px; width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img4.jpg" alt="Image 4" style="height: 570px; width: 100%;">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </nav>
-    <div class="row no-gutters align-items-center justify-content-center text-center">
-        <img src="img2.jpg" alt="Image" style="height: 550px;">
-    </div>
+
+        <script>
+            // Activate the carousel and set the interval
+            $(document).ready(function () {
+                $('#header-carousel').carousel({
+                    interval: 1000 // Slide every 3 seconds
+                });
+            });
+        </script>
+
+    </header>
+
+
 
     <!-- Masthead-->
     <header class="masthead">
@@ -85,8 +152,10 @@
                     <div class="p-5">
                         <h1 class="text-white font-weight-bold">Welcome to my profile</h1>
                         <hr class="divider" />
-                        <p class="text-white-75 mb-5" style="text-align: justify">"Alan Turing once predicted that one day machines would be able to
-                            speak and understand language like humans. Today, with the advancement of technology, that day has arrived and machines can now speak."</p>
+                        <p class="text-white-75 mb-5" style="text-align: justify">"Alan Turing once predicted that one
+                            day machines would be able to
+                            speak and understand language like humans. Today, with the advancement of technology, that
+                            day has arrived and machines can now speak."</p>
                         <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                     </div>
                 </div>
@@ -96,11 +165,11 @@
     </header>
 
     <!-- About-->
-    <section class="page-section bg-primary" id="about" >
+    <section class="page-section bg-primary" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">About Me</h2>
+                    <h2 class="text-black mt-0">About Me</h2>
                     <hr class="divider divider-light" />
                     <p class="text-white-75 mb-4">
                     <ul>
@@ -110,13 +179,13 @@
                         <script>
                             // Get the current year
                             const currentYear = new Date().getFullYear();
-                          
+
                             // Define the starting year of teaching experience
                             const startYear = 2010; // Replace with the actual starting year
-                          
+
                             // Calculate the number of years of teaching experience
                             const yearsOfExperience = currentYear - startYear;
-                          
+
                             // Display the number of years of experience in the paragraph
                             const experienceElement = document.getElementById("experience");
                             experienceElement.innerHTML = `Dr. Nekuri Naveen has ${yearsOfExperience} years of teaching experience.
@@ -124,11 +193,11 @@
                                                             He works in the area of Data Mining, Machine Learning, Metaheuristics, Neural Networks.<br><br>
                                                             Dr. Naveen has obtained his Ph.D, Master of Technology (M.Tech.) in Software Engineering, and Bachelor of Technology (B.Tech.) in Computer Science & Information Technology degrees from the University of Hyderabad, Hyderabad, GIET – affiliated to JNTU Hyderabad, GMRIT – affiliated to JNTU Hyderabad in the year 2013, 2006 & 2004 respectively.<br><br>
                                                             Prior to joining the University of Hyderabad, he worked in SITE - Tadepalligudem, VIT – Bhimavaram, and BITS - Madanapalle engineering colleges.`;
-                          </script>
-                          
-                          
+                        </script>
+
+
                         </p>
-                       
+
 
                     </ul>
                     </p>
@@ -137,167 +206,288 @@
             </div>
         </div>
     </section>
-       
-    <!-- Teachings-->
-    <section class="page-section bg-primary" id="teachings" style="margin-bottom: 50px;">
-        <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-              <h2 class="text-white mt-0">Teachings</h2>
-              <hr class="divider divider-light" />
-              <table class="teachings-table">
-                <thead>
-                  <tr>
-                    <th>Year</th>
-                    <th>Semester</th>
-                    <th>Courses</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td rowspan="2">2020</td>
-                    <td>1</td>
-                    <td>Data Mining</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>PM</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">2021</td>
-                    <td>1</td>
-                    <td>DS</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Algo</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">2022</td>
-                    <td>1</td>
-                    <td>NN</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>OT</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">2023</td>
-                    <td>1</td>
-                    <td>PM</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>DS</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <style>
-        .teachings-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 20px;
-        }
-      
-        .teachings-table th,
-        .teachings-table td {
-          padding: 10px;
-          text-align: center;
-          border-bottom: 1px solid #ddd;
-        }
-      
-        .teachings-table th {
-          background-color: #f2f2f2;
-          font-weight: bold;
-        }
-      </style>
-      
 
-    <!-- publications-->
-    <section class="page-section" id="publications">
+    <!-- Teachings-->
+    <section class="page-section" id="teachings" style="background-color: #f8f8f8;">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Research Publications</h2>
-            <hr class="divider" />
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Paper1</h3>
-                        <p class="text-muted mb-0">Information about paper 1</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Paper 2</h3>
-                        <p class="text-muted mb-0">Information about paper 2</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Paper 3</h3>
-                        <p class="text-muted mb-0">Information about paper 3</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Paper 4</h3>
-                        <p class="text-muted mb-0">Information about paper 4</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Conference Papers</h2>
-            <hr class="divider" />
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Conference 1</h3>
-                        <p class="text-muted mb-0">Information about paper 1</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Conference 2</h3>
-                        <p class="text-muted mb-0">Information about paper 2</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Conference 3</h3>
-                        <p class="text-muted mb-0">Information about paper 3</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">conference 4</h3>
-                        <p class="text-muted mb-0">Information about paper 4</p>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-black mt-0">Teachings</h2>
+                    <hr class="divider divider-light" />
+
+                    <div class="accordion" id="teachingsAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2023f">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2023f" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2023f">
+                                    2023(Jan - May)
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2023f" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2023f" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <table class="teachings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Courses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>PM Lab</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2022s">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2022s" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2022s">
+                                    2022 (July - Dec)
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2022s" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2022s" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <table class="teachings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Courses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Algo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NN</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2022f">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2022f" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2022f">
+                                    2022 (Jan - May)
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2022f" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2022f" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <table class="teachings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Courses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>DS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>PM</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2021s">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2021s" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2021s">
+                                    2021 (July - Dec)
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2021s" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2021s" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <table class="teachings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Courses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Algo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MH</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2021f">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2021f" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2021f">
+                                    2021 (Jan - May)
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2021f" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2021f" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <table class="teachings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Courses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>DS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NN</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2020s">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2020s" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2020s">
+                                    2020 (July - Dec)
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2020s" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2020s" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <table class="teachings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Courses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Data Mining</td>
+                                            </tr>
+                                            <tr>
+                                                <td>PM</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more accordion-item blocks for other years -->
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- publications-->
+
+    <section class="page-section bg-primary" id="publications">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Research Publications</h2>
+            <hr class="divider" />
+
+            <div class="publications-list">
+
+                <li>
+                    Naveen, N., &amp; Rao, M. C. (2016). Bankruptcy Prediction Using Memetic Algorithm. In
+                    Proceedings of the International Conference on Multi-disciplinary Trends in Artificial
+                    Intelligence (MIWAI 2016) (pp. 153-161). [Conference details]
+                </li>
+                <li>
+                    Ravi, V., Naveen, N., &amp; Pandey, M. (2013). Hybrid classification and regression models
+                    via particle swarm optimization auto-associative neural network based nonlinear PCA.
+                    International Journal of Hybrid Intelligent Systems, 10(3), 137-149.
+                </li>
+                <li>
+                    Paramjeet, Ravi, V., Naveen, N., &amp; Rao, C. R. (2012). Privacy preserving data mining
+                    using particle swarm optimization trained auto-associative neural network: an application to
+                    bankruptcy prediction in banks. International Journal of Data Mining, Modelling and
+                    Management, 4(1), 39-56.
+                </li>
+                <li>
+                    Ravi, V., Naveen, N., &amp; Das, M. (2012). Hybrid classifier based on particle swarm
+                    optimization trained auto-associative neural networks as non-linear principal component
+                    analyzer: Application to banking. In Proceedings of the 12th International Conference on
+                    Intelligent Systems Design and Applications (ISDA 2012) (pp. 77-82).
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., &amp; Rao, C. R. (2012). Rule Extraction from DEWNN to Solve
+                    Classification and Regression Problems. In Proceedings of the 2012 3rd International
+                    Conference on Swarm, Evolutionary, and Memetic Computing (SEMCCO 2012) (pp. 206-214).
+                </li>
+                <li>
+                    Ravi, V., Naveen, N., &amp; Das, M. (2012). Particle Swarm Optimization Trained Auto
+                    Associative Neural Networks Used as Single Class Classifier. In Proceedings of the 2012 3rd
+                    International Conference on Swarm, Evolutionary, and Memetic Computing (SEMCCO 2012) (pp.
+                    577-584).
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., &amp; Rao, C. R. (2011). Forecasting Using Rules Extracted from
+                    Privacy Preservation Neural Network. In Proceedings of the 5th Multi-disciplinary
+                    International Workshop on Artificial Intelligence (MIWAI 2011) (pp. 248-260).
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., Rao, C. R., &amp; Chauhan, N. (2010). Differential evolution trained
+                    radial basis function network: application to bankruptcy prediction in banks. International
+                    Journal of Bio-Inspired Computation, 2(3/4), 222-232.
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., &amp; Rao, C. R. (2010). Data Mining via Rules Extracted from GMDH: An
+                    Application to Predict Churn in Bank Credit Cards. In Proceedings of the 14
+                <li>
+                    Naveen, N., Ravi, V., &amp; Rao, C. R. (2010). Data Mining via Rules Extracted from GMDH: An
+                    Application to Predict Churn in Bank Credit Cards. In Proceedings of the 14th International
+                    Conference on Knowledge-Based and Intelligent Information &amp; Engineering Systems (KES
+                    2010) (pp. 80-89).
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., &amp; Kumar, D. A. (2009). Application of fuzzyARTMAP for churn
+                    prediction in bank credit cards. International Journal of Information and Decision Sciences,
+                    1(4), 428-444.
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., &amp; Rao, C. R. (2009). Rule extraction from differential evolution
+                    trained radial basis function network using genetic algorithms. In Proceedings of the 5th
+                    International Conference on Automation Science and Engineering (CASE 2009) (pp. 152-157).
+                </li>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
     <!-- Reseach Team-->
-    <section id="team" class="page-section bg-primary">
+    <section id="team" class="page-section" style="background-color: #f8f8f8;">
         <div class="container px-4 px-lg-5">
             <div class="row no-gutters align-items-center justify-content-center text-center">
                 <div class="section-header">
                     <h2 class="text-center mt-0">Research Team</h2>
                     <hr class="divider" />
-                  
+
                 </div>
                 <br><br>
 
@@ -490,6 +680,7 @@
                             <td>Shantanu Khandelwal</td>
                             <td>Front-end development in value management platform</td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
