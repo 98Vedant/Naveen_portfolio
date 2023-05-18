@@ -27,6 +27,23 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
+    <style>
+        .accordion-body ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .accordion-body ul li {
+            text-align: left;
+        }
+
+        .accordion-body ul li::before {
+            content: "- ";
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -150,186 +167,404 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="text-black mt-0">Teaching</h2>
                     <hr class="divider divider-light" />
-
+                    <p>
+                    <h4 style="text-align: left;">Courses taught</h4><br>
+                    <p style="text-align: justify;"> Algorithms, Programming Methodology, Software Engineering, DBMS,
+                        Data Management, Programming Methedology Lab, IT Lab, DBMS Lab and Software Engineering Lab;
+                        Operaring Systems, Datawarehouse and Data Mining, Data Structures, C Programming.
+                    </p>
+                    </p>
                     <div class="accordion" id="teachingsAccordion">
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2023f">
+                            <h3 class="accordion-header" id="teachingsYear2023">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2023f" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2023f">
-                                    2023(Jan - May)
+                                    data-bs-target="#teachingsCollapse2023" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2023">
+                                    2023 - 24 (Upcoming academic year)
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2023f" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2023f" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingsCollapse2023" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2023" data-bs-parent="#teachingsAccordion">
                                 <div class="accordion-body">
-                                    <table class="teachings-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Courses</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>PM</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PM Lab</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="accordion" id="teachingsSubAccordion2023">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2023">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2023" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2023">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2023" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2023">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Programmig Methodology</li>
+                                                        <li>Programmig Methodology Lab</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsSpring2023">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseSpring2023" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseSpring2023">
+                                                    Spring Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseSpring2023" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsSpring2023">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Machine Leanring</li>
+                                                        <li>IT Lab</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2022s">
+                            <h3 class="accordion-header" id="teachingsYear2022">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2022s" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2022s">
-                                    2022 (July - Dec)
+                                    data-bs-target="#teachingsCollapse2022" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2022">
+                                    2022 - 23
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2022s" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2022s" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingsCollapse2022" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2022" data-bs-parent="#teachingsAccordion">
                                 <div class="accordion-body">
-                                    <table class="teachings-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Courses</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Algo</td>
-                                            </tr>
-                                            <tr>
-                                                <td>NN</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2022f">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2022f" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2022f">
-                                    2022 (Jan - May)
-                                </button>
-                            </h3>
-                            <div id="teachingsCollapse2022f" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2022f" data-bs-parent="#teachingsAccordion">
-                                <div class="accordion-body">
-                                    <table class="teachings-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Courses</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>DS</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PM</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2021s">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2021s" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2021s">
-                                    2021 (July - Dec)
-                                </button>
-                            </h3>
-                            <div id="teachingsCollapse2021s" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2021s" data-bs-parent="#teachingsAccordion">
-                                <div class="accordion-body">
-                                    <table class="teachings-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Courses</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Algo</td>
-                                            </tr>
-                                            <tr>
-                                                <td>MH</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2021f">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2021f" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2021f">
-                                    2021 (Jan - May)
-                                </button>
-                            </h3>
-                            <div id="teachingsCollapse2021f" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2021f" data-bs-parent="#teachingsAccordion">
-                                <div class="accordion-body">
-                                    <table class="teachings-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Courses</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>DS</td>
-                                            </tr>
-                                            <tr>
-                                                <td>NN</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2020s">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2020s" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2020s">
-                                    2020 (July - Dec)
-                                </button>
-                            </h3>
-                            <div id="teachingsCollapse2020s" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2020s" data-bs-parent="#teachingsAccordion">
-                                <div class="accordion-body">
-                                    <table class="teachings-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Courses</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Data Mining</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PM</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="accordion" id="teachingsSubAccordion2022">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2022">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2022" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2022">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2022" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2022">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Programmig Methodology</li>
+                                                        <li>Programmig Methodology Lab</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsSpring2022">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseSpring2022" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseSpring2022">
+                                                    Spring Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseSpring2022" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsSpring2022">
+                                                <div class="accordion-body">
+                                                    <ul>
+
+                                                        <li>IT Lab</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Add more accordion-item blocks for other years -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2021">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2021" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2021">
+                                    2021 - 22
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2021" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2021" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="teachingsSubAccordion2021">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2021">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2021" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2021">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2021" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2021">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Programming Methodology</li>
+                                                        <li>Programming Methodology Lab</li>
+                                                        <li>Software Engineering</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2020">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2020" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2020">
+                                    2020 - 21
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2020" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2020" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="teachingsSubAccordion2020">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2020">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2020" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2020">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2020" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2020">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Algorithms</li>
+                                                        <li>IT Lab</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsSpring2020">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseSpring2020" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseSpring2020">
+                                                    Spring Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseSpring2020" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsSpring2020">
+                                                <div class="accordion-body">
+                                                    <ul>
+
+                                                        <li>Programmig Methodology</li>
+
+                                                        <li>Programmig Methodology Lab</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2019">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2019" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2019">
+                                    2019 - 20
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2019" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2019" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="teachingsSubAccordion2019">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2019">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2019" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2019">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2019" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2019">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Algorithms</li>
+                                                        <li>IT Lab</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsSpring2019">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseSpring2019" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseSpring2019">
+                                                    Spring Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseSpring2019" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsSpring2019">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Programmig Methodology</li>
+                                                        <li>Programmig Methodology Lab</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2018">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2018" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2018">
+                                    2018 - 19
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2018" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2018" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="teachingsSubAccordion2018">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2018">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2018" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2018">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2018" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2018">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Algorithms</li>
+                                                        <li>IT Lab</li>
+                                                        <li>Data Management</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsSpring2018">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseSpring2018" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseSpring2018">
+                                                    Spring Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseSpring2018" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsSpring2018">
+                                                <div class="accordion-body">
+                                                    <ul>
+
+                                                        <li>...</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="teachingsYear2017">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#teachingsCollapse2017" aria-expanded="false"
+                                    aria-controls="teachingsCollapse2017">
+                                    2017 - 18
+                                </button>
+                            </h3>
+                            <div id="teachingsCollapse2017" class="accordion-collapse collapse"
+                                aria-labelledby="teachingsYear2017" data-bs-parent="#teachingsAccordion">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="teachingsSubAccordion2017">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsAutumn2017">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseAutumn2017" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseAutumn2017">
+                                                    Autumn Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseAutumn2017" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsAutumn2017">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>DBMS</li>
+                                                        <li>DBMS Lab</li>
+                                                        <li>Data Management</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="teachingsSpring2017">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#teachingsCollapseSpring2017" aria-expanded="false"
+                                                    aria-controls="teachingsCollapseSpring2017">
+                                                    Spring Semester
+                                                </button>
+                                            </h3>
+                                            <div id="teachingsCollapseSpring2019" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingsSpring2019">
+                                                <div class="accordion-body">
+                                                    <ul>
+
+                                                        <li>Software Engineering</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add accordion-item blocks for other years -->
 
                     </div>
+
+
+
+                    <script>
+                        $(document).ready(function () {
+                            // Enable sub-accordion without affecting the parent accordion
+                            $('.accordion .accordion-item .accordion-button').click(function (e) {
+                                e.stopPropagation();
+                                $(this).attr('aria-expanded', function (i, attr) {
+                                    return attr === 'true' ? 'false' : 'true';
+                                });
+                                $($(this).data('bs-target')).collapse('toggle');
+                            });
+                        });
+                    </script>
+
+
                 </div>
             </div>
         </div>
@@ -343,15 +578,34 @@
             <h2 class="text-center mt-0">Research Publications</h2>
             <hr class="divider" />
             <center>
-            <div class="publication-buttons">
-                <a href="https://orcid.org/0000-0002-0435-2949" class="btn btn-primary">ORCID</a>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=57193574372" class="btn btn-primary">SCOPUS</a>
-                <a href="https://dblp.org/pid/55/8654.html" class="btn btn-primary">DBLP</a>
-                <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Nekuri%20Naveen" class="btn btn-primary">IEEE</a>
-            </div>
-        </center>
+                <div class="publication-buttons">
+                    <a href="https://orcid.org/0000-0002-0435-2949" class="btn btn-primary">ORCID</a>
+                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57193574372"
+                        class="btn btn-primary">SCOPUS</a>
+                    <a href="https://dblp.org/pid/55/8654.html" class="btn btn-primary">DBLP</a>
+                    <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Nekuri%20Naveen"
+                        class="btn btn-primary">IEEE</a>
+                </div>
+            </center>
             <div class="publications-list">
+                <li>
 
+                    Myakal, S., Pal, R., & Naveen, N. (2023). Pixel Value Prediction Task: Performance Comparison of
+                    Multi-Layer Perceptron and Radial Basis Function Neural Network.
+                    In Proceedings of the International Conference on Multi-disciplinary Trends in Artificial
+                    Intelligence (MIWAI 2023) (Accepted).
+                </li>
+                <li>
+                    Myakal, S., Pal, R., & Naveen, N. (2023). A Novel Pixel Value Predictor Using Long Short Term Memory
+                    (LSTM) Network. In Proceedings of the International Conference on Multi-disciplinary Trends in
+                    Artificial Intelligence (MIWAI 2023) (Accepted).
+                </li>
+                <li>
+                    Naveen, N., & Sookshma, M. (2020). Adaptive Feature Selection and Classification Using Optimization
+                    Technique. In S. Satapathy, V. Bhateja, B. Nguyen, N. Nguyen, & D. N. Le (Eds.), Frontiers in
+                    Intelligent Computing: Theory and Applications (pp. 146-155). Advances in Intelligent Systems and
+                    Computing, Vol. 1013. Singapore: Springer. doi: 10.1007/978-981-32-9186-7_17.
+                </li>
                 <li>
                     Naveen, N., &amp; Rao, M. C. (2016). Bankruptcy Prediction Using Memetic Algorithm. In
                     Proceedings of the International Conference on Multi-disciplinary Trends in Artificial
@@ -361,6 +615,18 @@
                     Ravi, V., Naveen, N., &amp; Pandey, M. (2013). Hybrid classification and regression models
                     via particle swarm optimization auto-associative neural network based nonlinear PCA.
                     International Journal of Hybrid Intelligent Systems, 10(3), 137-149.
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., & Raghavendra Rao, C. (2012). Rule extraction from privacy preserving neural
+                    network: Application to banking. Advanced Materials Research, 403-408, 920–928.
+                </li>
+                <li>
+                    Naveen, N., Ravi, V., & Raghavendra Rao, C., & Sarath, K. N. V. D. (2012). Rule Extraction Using Firefly
+                    Optimization: Application to Banking. In 2012 IEEE International Conference on Industrial
+                    Engineering and Engineering Management (IEEM 2012), 10-13 December 2012, Hong Kong. Retrieved from
+                    <a href="http://ieem2019.org/archive/IEEM%202012%20Program%20Book.pdf">http://ieem2019.org/archive/IEEM%202012%20Program%20Book.pdf
+
+                    </a>
                 </li>
                 <li>
                     Paramjeet, Ravi, V., Naveen, N., &amp; Rao, C. R. (2012). Privacy preserving data mining
@@ -395,9 +661,6 @@
                     radial basis function network: application to bankruptcy prediction in banks. International
                     Journal of Bio-Inspired Computation, 2(3/4), 222-232.
                 </li>
-                <li>
-                    Naveen, N., Ravi, V., &amp; Rao, C. R. (2010). Data Mining via Rules Extracted from GMDH: An
-                    Application to Predict Churn in Bank Credit Cards. In Proceedings of the 14
                 <li>
                     Naveen, N., Ravi, V., &amp; Rao, C. R. (2010). Data Mining via Rules Extracted from GMDH: An
                     Application to Predict Churn in Bank Credit Cards. In Proceedings of the 14th International
