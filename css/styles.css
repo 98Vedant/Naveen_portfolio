@@ -10989,6 +10989,13 @@ header-image{
 
 
 }
+.teachings-table {
+  border-spacing: 10px;
+}
+.teachings-table td,
+.teachings-table th {
+  padding: 6px;
+}
 
 header.masthead {
   padding-top: 10rem;
@@ -10999,6 +11006,7 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
   background-color: #fff;
+  height: 0px;
 
 }
 header.masthead h1, header.masthead .h1 {
@@ -11008,8 +11016,10 @@ header.masthead h1, header.masthead .h1 {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
+    padding-top: 4.3rem;
     padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
   }
   header.masthead p {
     font-size: 1.15rem;
