@@ -6,6 +6,34 @@
 //
 // Scripts
 // 
+// Timeline data
+window.addEventListener('DOMContentLoaded', function() {
+    const quoteText = document.querySelector('.quote-text');
+    quoteText.style.animationDelay = '1s'; // Delay the animation start by 1 second
+  });
+  
+
+$(document).ready(function() {
+    var publicationCards = $('.publication-card');
+    var currentIndex = 0;
+
+    function showNextCard() {
+      // Hide the current active card
+      publicationCards.eq(currentIndex).removeClass('active');
+      
+      // Update the index to show the next card
+      currentIndex = (currentIndex + 1) % publicationCards.length;
+
+      // Show the next card
+      publicationCards.eq(currentIndex).addClass('active');
+    }
+
+    // Initially show the first card
+    publicationCards.eq(currentIndex).addClass('active');
+
+    // Slide to the next card every 3 seconds
+    setInterval(showNextCard, 3000);
+  });
 
 window.addEventListener('DOMContentLoaded', event => {
 

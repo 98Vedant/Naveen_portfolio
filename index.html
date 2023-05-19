@@ -7,6 +7,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Naveen - Portfio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.min.js"></script>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Include jQuery -->
@@ -50,31 +53,38 @@
     <div class="scroll-buttons">
         <button onclick="window.scrollTo(0, 0);" class="go-to-top-button">⬆</button>
     </div>
-    <section id="head1">
+    <section id="home">
 
     </section>
+
     <!-- Navigation-->
     <header class="masthead">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color: white;">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">UOH</a>
+                <a class="navbar-brand text-black" href="#page-top">
+                    <img src="uoh_logo.png" alt="UOH Logo" class="logo-img">
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse new" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#head1">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#teachings">Teaching</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Project Students</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#teaching">Teaching</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#publications">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#students">Project Students</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="login.html">Log in</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container px-4 px-lg-5">
+
+
+        <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="row no-gutters align-items-center justify-content-center text-center">
                     <div class="col-lg-6 bg-grey">
@@ -83,9 +93,9 @@
                                 <div class="col-lg-8 align-self-end"
                                     style="object-fit: cover; width: 100%; height: 100%;">
                                     <img src="naveen.jfif" class="img-fluid rounded-image" alt="Image" class="img-fluid"
-                                        style="height: 50%;">
+                                        style="height: 60%;">
                                     <h2>Dr. N.Naveen</h2>
-                                    <p>Assistant Professor <br>
+                                    <p style=" font-family: Arial, sans-serif;">Assistant Professor <br>
                                         EB-108, New Building, <br>
                                         School of Computer and Information Sciences<br>
                                         University of Hyderabad<br>
@@ -96,22 +106,51 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-6 bg-blue">
+                        <div class="featured-publications">
+                            <h3>Featured Publications</h3>
+                            <div class="publication-slider">
+                                <div class="publication-card">
+                                    <h4> Pixel Value Prediction Task</h4>
+                                    <p style=" font-family: Arial, sans-serif;"> Performance Comparison of Multi-Layer
+                                        Perceptron and Radial Basis Function
+                                        Neural Network. </p>
+                                    <a href="#publications" class="btn btn-primary">Read More</a>
+                                </div>
+                                <div class="publication-card">
+                                    <h4> Pixel Value Predictor Using LSTM Network</h4>
+                                    <p style=" font-family: Arial, sans-serif;"> In Proceedings of the International
+                                        Conference on Multi-disciplinary Trends in
+                                        Artificial Intelligence </p>
+                                    <a href="#publications" class="btn btn-primary">Read More</a>
+                                </div>
+                                <div class="publication-card">
+                                    <h4>Bankruptcy Prediction Using Memetic Algorithm</h4>
+                                    <p style=" font-family: Arial, sans-serif;">In Proceedings of the International
+                                        Conference on Multi-disciplinary Trends in
+                                        Artificial Intelligence </p>
+                                    <a href="#publications" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="p-5">
-                            <img src="alan.jpg" alt="Image" style="height: 180px;">
-                            <p class="text-black-75 mb-5" style="text-align: justify">"Alan Turing once predicted that
+                            <p class="text-black-75 quote-text">"Alan Turing once predicted that
                                 one
                                 day machines would be able to
                                 speak and understand language like humans. Today, with the advancement of technology,
                                 that
                                 day has arrived and machines can now speak."</p>
                             <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
-
     </header>
 
 
@@ -127,7 +166,7 @@
                     <p class="text-white-75 mb-4">
                     <ul>
 
-                        <p id="experience" style="text-align: justify;"></p>
+                        <p id="experience" style="text-align: justify; "></p>
 
                         <script>
                             // Get the current year
@@ -161,7 +200,7 @@
     </section>
 
     <!-- Teaching-->
-    <section class="page-section" id="teachings" style="background-color: #f8f8f8;">
+    <section class="page-section" id="teaching" style="background-color: #f8f8f8;">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -174,30 +213,30 @@
                         Operaring Systems, Datawarehouse and Data Mining, Data Structures, C Programming.
                     </p>
                     </p>
-                    <div class="accordion" id="teachingsAccordion">
+                    <div class="accordion" id="teachingAccordion">
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2023">
+                            <h3 class="accordion-header" id="teachingYear2023">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2023" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2023">
+                                    data-bs-target="#teachingCollapse2023" aria-expanded="false"
+                                    aria-controls="teachingCollapse2023">
                                     2023 - 24 (Upcoming academic year)
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2023" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2023" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2023" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2023" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2023">
+                                    <div class="accordion" id="teachingSubAccordion2023">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2023">
+                                            <h3 class="accordion-header" id="teachingAutumn2023">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2023" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2023">
+                                                    data-bs-target="#teachingCollapseAutumn2023" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2023">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2023" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2023">
+                                            <div id="teachingCollapseAutumn2023" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2023">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Programmig Methodology</li>
@@ -207,16 +246,16 @@
                                             </div>
                                         </div>
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsSpring2023">
+                                            <h3 class="accordion-header" id="teachingSpring2023">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseSpring2023" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseSpring2023">
+                                                    data-bs-target="#teachingCollapseSpring2023" aria-expanded="false"
+                                                    aria-controls="teachingCollapseSpring2023">
                                                     Spring Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseSpring2023" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsSpring2023">
+                                            <div id="teachingCollapseSpring2023" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingSpring2023">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Machine Leanring</li>
@@ -230,28 +269,28 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2022">
+                            <h3 class="accordion-header" id="teachingYear2022">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2022" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2022">
+                                    data-bs-target="#teachingCollapse2022" aria-expanded="false"
+                                    aria-controls="teachingCollapse2022">
                                     2022 - 23
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2022" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2022" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2022" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2022" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2022">
+                                    <div class="accordion" id="teachingSubAccordion2022">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2022">
+                                            <h3 class="accordion-header" id="teachingAutumn2022">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2022" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2022">
+                                                    data-bs-target="#teachingCollapseAutumn2022" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2022">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2022" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2022">
+                                            <div id="teachingCollapseAutumn2022" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2022">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Programmig Methodology</li>
@@ -261,16 +300,16 @@
                                             </div>
                                         </div>
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsSpring2022">
+                                            <h3 class="accordion-header" id="teachingSpring2022">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseSpring2022" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseSpring2022">
+                                                    data-bs-target="#teachingCollapseSpring2022" aria-expanded="false"
+                                                    aria-controls="teachingCollapseSpring2022">
                                                     Spring Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseSpring2022" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsSpring2022">
+                                            <div id="teachingCollapseSpring2022" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingSpring2022">
                                                 <div class="accordion-body">
                                                     <ul>
 
@@ -285,28 +324,28 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2021">
+                            <h3 class="accordion-header" id="teachingYear2021">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2021" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2021">
+                                    data-bs-target="#teachingCollapse2021" aria-expanded="false"
+                                    aria-controls="teachingCollapse2021">
                                     2021 - 22
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2021" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2021" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2021" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2021" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2021">
+                                    <div class="accordion" id="teachingSubAccordion2021">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2021">
+                                            <h3 class="accordion-header" id="teachingAutumn2021">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2021" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2021">
+                                                    data-bs-target="#teachingCollapseAutumn2021" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2021">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2021" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2021">
+                                            <div id="teachingCollapseAutumn2021" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2021">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Programming Methodology</li>
@@ -322,28 +361,28 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2020">
+                            <h3 class="accordion-header" id="teachingYear2020">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2020" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2020">
+                                    data-bs-target="#teachingCollapse2020" aria-expanded="false"
+                                    aria-controls="teachingCollapse2020">
                                     2020 - 21
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2020" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2020" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2020" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2020" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2020">
+                                    <div class="accordion" id="teachingSubAccordion2020">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2020">
+                                            <h3 class="accordion-header" id="teachingAutumn2020">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2020" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2020">
+                                                    data-bs-target="#teachingCollapseAutumn2020" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2020">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2020" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2020">
+                                            <div id="teachingCollapseAutumn2020" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2020">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Algorithms</li>
@@ -354,16 +393,16 @@
                                             </div>
                                         </div>
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsSpring2020">
+                                            <h3 class="accordion-header" id="teachingSpring2020">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseSpring2020" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseSpring2020">
+                                                    data-bs-target="#teachingCollapseSpring2020" aria-expanded="false"
+                                                    aria-controls="teachingCollapseSpring2020">
                                                     Spring Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseSpring2020" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsSpring2020">
+                                            <div id="teachingCollapseSpring2020" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingSpring2020">
                                                 <div class="accordion-body">
                                                     <ul>
 
@@ -379,28 +418,28 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2019">
+                            <h3 class="accordion-header" id="teachingYear2019">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2019" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2019">
+                                    data-bs-target="#teachingCollapse2019" aria-expanded="false"
+                                    aria-controls="teachingCollapse2019">
                                     2019 - 20
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2019" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2019" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2019" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2019" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2019">
+                                    <div class="accordion" id="teachingSubAccordion2019">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2019">
+                                            <h3 class="accordion-header" id="teachingAutumn2019">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2019" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2019">
+                                                    data-bs-target="#teachingCollapseAutumn2019" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2019">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2019" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2019">
+                                            <div id="teachingCollapseAutumn2019" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2019">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Algorithms</li>
@@ -410,16 +449,16 @@
                                             </div>
                                         </div>
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsSpring2019">
+                                            <h3 class="accordion-header" id="teachingSpring2019">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseSpring2019" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseSpring2019">
+                                                    data-bs-target="#teachingCollapseSpring2019" aria-expanded="false"
+                                                    aria-controls="teachingCollapseSpring2019">
                                                     Spring Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseSpring2019" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsSpring2019">
+                                            <div id="teachingCollapseSpring2019" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingSpring2019">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Programmig Methodology</li>
@@ -434,28 +473,28 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2018">
+                            <h3 class="accordion-header" id="teachingYear2018">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2018" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2018">
+                                    data-bs-target="#teachingCollapse2018" aria-expanded="false"
+                                    aria-controls="teachingCollapse2018">
                                     2018 - 19
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2018" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2018" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2018" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2018" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2018">
+                                    <div class="accordion" id="teachingSubAccordion2018">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2018">
+                                            <h3 class="accordion-header" id="teachingAutumn2018">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2018" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2018">
+                                                    data-bs-target="#teachingCollapseAutumn2018" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2018">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2018" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2018">
+                                            <div id="teachingCollapseAutumn2018" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2018">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>Algorithms</li>
@@ -466,16 +505,16 @@
                                             </div>
                                         </div>
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsSpring2018">
+                                            <h3 class="accordion-header" id="teachingSpring2018">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseSpring2018" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseSpring2018">
+                                                    data-bs-target="#teachingCollapseSpring2018" aria-expanded="false"
+                                                    aria-controls="teachingCollapseSpring2018">
                                                     Spring Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseSpring2018" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsSpring2018">
+                                            <div id="teachingCollapseSpring2018" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingSpring2018">
                                                 <div class="accordion-body">
                                                     <ul>
 
@@ -489,28 +528,28 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2017">
+                            <h3 class="accordion-header" id="teachingYear2017">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2017" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2017">
+                                    data-bs-target="#teachingCollapse2017" aria-expanded="false"
+                                    aria-controls="teachingCollapse2017">
                                     2017 - 18
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2017" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2017" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2017" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2017" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <div class="accordion" id="teachingsSubAccordion2017">
+                                    <div class="accordion" id="teachingSubAccordion2017">
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsAutumn2017">
+                                            <h3 class="accordion-header" id="teachingAutumn2017">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseAutumn2017" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseAutumn2017">
+                                                    data-bs-target="#teachingCollapseAutumn2017" aria-expanded="false"
+                                                    aria-controls="teachingCollapseAutumn2017">
                                                     Autumn Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseAutumn2017" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsAutumn2017">
+                                            <div id="teachingCollapseAutumn2017" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingAutumn2017">
                                                 <div class="accordion-body">
                                                     <ul>
                                                         <li>DBMS</li>
@@ -522,16 +561,16 @@
                                             </div>
                                         </div>
                                         <div class="accordion-item">
-                                            <h3 class="accordion-header" id="teachingsSpring2017">
+                                            <h3 class="accordion-header" id="teachingSpring2017">
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#teachingsCollapseSpring2017" aria-expanded="false"
-                                                    aria-controls="teachingsCollapseSpring2017">
+                                                    data-bs-target="#teachingCollapseSpring2017" aria-expanded="false"
+                                                    aria-controls="teachingCollapseSpring2017">
                                                     Spring Semester
                                                 </button>
                                             </h3>
-                                            <div id="teachingsCollapseSpring2019" class="accordion-collapse collapse"
-                                                aria-labelledby="teachingsSpring2019">
+                                            <div id="teachingCollapseSpring2019" class="accordion-collapse collapse"
+                                                aria-labelledby="teachingSpring2019">
                                                 <div class="accordion-body">
                                                     <ul>
 
@@ -621,7 +660,8 @@
                     network: Application to banking. Advanced Materials Research, 403-408, 920–928.
                 </li>
                 <li>
-                    Naveen, N., Ravi, V., & Raghavendra Rao, C., & Sarath, K. N. V. D. (2012). Rule Extraction Using Firefly
+                    Naveen, N., Ravi, V., & Raghavendra Rao, C., & Sarath, K. N. V. D. (2012). Rule Extraction Using
+                    Firefly
                     Optimization: Application to Banking. In 2012 IEEE International Conference on Industrial
                     Engineering and Engineering Management (IEEM 2012), 10-13 December 2012, Hong Kong. Retrieved from
                     <a href="http://ieem2019.org/archive/IEEM%202012%20Program%20Book.pdf">http://ieem2019.org/archive/IEEM%202012%20Program%20Book.pdf
@@ -686,39 +726,36 @@
 
 
 
-    <!-- Project Team-->
-    <section class="page-section" id="team" style="background-color: #f8f8f8;">
+    <!-- Project students-->
+    <section class="page-section" id="students" style="background-color: #f8f8f8;">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-black mt-0"> Project Students</h2>
+                    <h2 class="text-black mt-0">Project Students</h2>
                     <hr class="divider divider-light" />
-
-                    <div class="accordion" id="teachingsAccordion">
+                    <div class="accordion" id="teachingAccordion">
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2023f">
+                            <h3 class="accordion-header" id="teachingYear2023f">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2023f" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2023f">
+                                    data-bs-target="#teachingCollapse2023f" aria-expanded="false"
+                                    aria-controls="teachingCollapse2023f">
                                     PhD Students
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2023f" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2023f" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2023f" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2023f" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <table class="teachings-table">
+                                    <table class="teaching-table">
                                         <thead>
                                             <tr>
-
                                                 <th>Name</th>
-                                                <th>Title</th>
+                                                <!--  <th>Title</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-
-                                                <td>M SABHAPATHY(18-23/24)</td>
-                                                <td>MACHINE LEARNING FOR REVERSIBLE DATA HIDING</td>
+                                                <td>M Sabhapathy(2018-23/24) Co-superviser Dr. Rajarshi Pal(IDRBT)</td>
+                                                <!-- <td>Machine Learning for Reversible Data Hiding</td>  -->
                                             </tr>
                                         </tbody>
                                     </table>
@@ -726,172 +763,129 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2022s">
+                            <h3 class="accordion-header" id="teachingYear2022s">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2022s" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2022s">
+                                    data-bs-target="#teachingCollapse2022s" aria-expanded="false"
+                                    aria-controls="teachingCollapse2022s">
                                     MTech Students
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2022s" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2022s" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2022s" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2022s" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <table class="teachings-table">
+                                    <table class="teaching-table">
                                         <thead>
                                             <tr>
-
                                                 <th>Name</th>
-                                                <th>Title</th>
-                                            </tr>
+                                                <!--  <th>Title</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-
-
                                                 <td>Vedant Acharya(22-23)</td>
-                                                <td>Lung cancer recurrence and survivability prediction</td>
+                                                <!-- <td>Lung Cancer Recurrence and Survivability Prediction</td> -->
                                             </tr>
                                             <tr>
-
-
                                                 <td>Mahitha Kodali(22-23)</td>
-                                                <td>A metaheuristic based approach for vehicle routing problem</td>
+                                                <!-- <td>A Metaheuristic-based Approach for Vehicle Routing Problem</td> -->
                                             </tr>
                                             <tr>
-
-
                                                 <td>Chinmayee Mohapatra(22-23)</td>
-                                                <td>Ingress Networking on Kubernetes</td>
+                                                <!-- <td>Ingress Networking on Kubernetes</td> -->
                                             </tr>
                                             <tr>
-
-
+                                                <td>Astha(21-22)</td>
+                                                <!-- <td>COVID-19 X–Ray Image Classification and Segmentation</td> -->
+                                            </tr>
+                                            <tr>
+                                                <td>Thombare Sumit Samadhan(21-22)</td>
+                                                <!-- <td>Customer Segmentation using Data Mining: An Application of Retail Industry</td> -->
+                                            </tr>
+                                            <tr>
                                                 <td>Shahgul(20-21)</td>
-                                                <td>Privacy Preservation for Machine Learning Training and
-                                                    Classification</td>
+                                                <!-- <td>Privacy Preservation for Machine Learning Training and Classification</td> -->
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Cheekoti Navatha(20-21)</td>
+                                                <!-- <td>Predicting Stock Price Movement using Machine Learning</td> -->
                                             </tr>
                                             <tr>
-
-
-                                                <td>ASTHA(21-22)</td>
-                                                <td>COVID-19 X–Ray Image Classification and Segmentation</td>
+                                                <td>Kuchana Sathwik(20-21)</td>
+                                                <!-- <td>Object Recognition and Detection</td> -->
                                             </tr>
                                             <tr>
-
-
-                                                <td>THOMBARE SUMIT SAMADHAN(21-22)</td>
-                                                <td>Customer Segmentation using Data Mining: An Application of Retail
-                                                    Industry</td>
+                                                <td>Amrit Majumder(19-20)</td>
+                                                <!-- <td>Generating SVM Tree for Unsupervised Data</td> -->
                                             </tr>
                                             <tr>
-
-
-                                                <td>CHEEKOTI NAVATHA(20-21)</td>
-                                                <td>Predicting Stock Price Movement using Machine Learning</td>
+                                                <td>K Ratna Deepti(19-20)</td>
+                                                <!-- <td>Association Rules Mining using Global Optimization Technique</td> -->
                                             </tr>
                                             <tr>
-
-
-                                                <td>KUCHANA SATHWIK(20-21)</td>
-                                                <td>Object Recognition and Detection</td>
+                                                <td>Delton M Antony(19-20)</td>
+                                                <!-- <td>Learning from Disaster</td> -->
                                             </tr>
                                             <tr>
-
-                                                <td>AMRIT MAJUMDER(19-20)</td>
-                                                <td>Generating SVM tree for unsupervised data</td>
+                                                <td>Vazrala Anil(18-19)</td>
+                                                <!-- <td>Prediction of System Failure</td> -->
                                             </tr>
                                             <tr>
-
-
-                                                <td>K RATNA DEEPTHI(19-20)</td>
-                                                <td>ASSOCIATION RULES MINING USING GLOBAL OPTIMIZATION TECHNIQUE</td>
+                                                <td>Neha Soni(18-19)</td>
+                                                <!-- <td>Fraud Detection using Deep Learning</td> -->
                                             </tr>
                                             <tr>
-
-                                                <td>DELTON M ANTONY(19-20)</td>
-                                                <td>LEARNING FROM DISASTER</td>
-                                            </tr>
-                                            <tr>
-
-
-
-                                                <td>VAZRALA ANIL(18-19)</td>
-                                                <td>PREDICTION OF SYSTEM FAILURE</td>
-                                            </tr>
-                                            <tr>
-
-
-                                                <td>NEHA SONI(18-19)</td>
-                                                <td>FRAUD DETECTION USING DEEP LEARNING</td>
-                                            </tr>
-                                            <tr>
-
                                                 <td>Mandala Sookshma(17-18)</td>
-                                                <td>Adaptive feature selection and classification by using optimization
-                                                    algorithms</td>
-
+                                                <!-- <td>Adaptive Feature Selection and Classification by using Optimization Algorithms</td> -->
                                             </tr>
-
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h3 class="accordion-header" id="teachingsYear2022f">
+                            <h3 class="accordion-header" id="teachingYear2022f">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#teachingsCollapse2022f" aria-expanded="false"
-                                    aria-controls="teachingsCollapse2022f">
-                                    MCA Students
+                                    data-bs-target="#teachingCollapse2022f" aria-expanded="false"
+                                    aria-controls="teachingCollapse2022f">
+                                    MCA Students (6 Months)
                                 </button>
                             </h3>
-                            <div id="teachingsCollapse2022f" class="accordion-collapse collapse"
-                                aria-labelledby="teachingsYear2022f" data-bs-parent="#teachingsAccordion">
+                            <div id="teachingCollapse2022f" class="accordion-collapse collapse"
+                                aria-labelledby="teachingYear2022f" data-bs-parent="#teachingAccordion">
                                 <div class="accordion-body">
-                                    <table class="teachings-table">
+                                    <table class="teaching-table">
                                         <thead>
                                             <tr>
-
                                                 <th>Name</th>
-                                                <th>Title</th>
+                                                <!--  <th>Title</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
-
                                             <tr>
-
-
                                                 <td>Purna Chandra Mansingh(2022)</td>
-                                                <td>Online code editor: A tool for Nados.io</td>
+                                                <!-- <td>Online Code Editor: A Tool for Nados.io</td>  -->
                                             </tr>
                                             <tr>
-
-
                                                 <td>Vaibhav Pandey(2022)</td>
-                                                <td>Loan application process automation</td>
+                                                <!-- <td>Loan Application Process Automation</td> -->
                                             </tr>
                                             <tr>
-
-
                                                 <td>Prakhar Prem Sinha(2022)</td>
-                                                <td>Loan against securities system</td>
+                                                <!-- <td>Loan against Securities System</td> -->
                                             </tr>
                                             <tr>
-
-
                                                 <td>Shantanu Khandelwal(2022)</td>
-                                                <td>Front-end development in value management platform</td>
+                                                <!-- <td>Front-end Development in Value Management Platform</td> -->
+                                            </tr>
                                             <tr>
-
                                                 <td>Jaswinder Singh(2018)</td>
-                                                <td>IFRS9 Impairment allowance model development and validation</td>
+                                                <!-- <td>IFRS9 Impairment Allowance Model Development and Validation</td> -->
                                             </tr>
                                             <tr>
                                                 <td>Sarabjeet Singh(2018)</td>
-                                                <td>Stress Testing Execution</td>
-
-                                            </tr>
+                                                <!-- <td>Stress Testing Execution</td> -->
                                             </tr>
                                         </tbody>
                                     </table>
@@ -899,9 +893,7 @@
                             </div>
                         </div>
 
-
                         <!-- Add more accordion-item blocks for other courses-->
-
                     </div>
                 </div>
             </div>
@@ -927,14 +919,8 @@
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                 <div class="col-lg-6">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                    <form id="contactForm" action="send_email.php" method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..."
@@ -963,7 +949,7 @@
                         </div>
                         <!--Appointment time and date-->
                         <div class="form-floating mb-3">
-                            <h5>Preferred Date and Time<h5>
+                            <h6>Preferred Date and Time<h6>
                                     <label for="datetime"></label>
                                     <input type="datetime-local" id="datetime" name="datetime" required>
                         </div>
@@ -999,8 +985,9 @@
                             </div>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
-                                type="submit">Submit</button></div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -1016,19 +1003,33 @@
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2023 - Nekuri Naveen</div>
+            <div class="small text-muted">
+                <div class="d-flex justify-content-between">
+                    <div >
+                        <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook" class="logo-img"
+                                style="height: 20px; width: 20px; margin-top: -20px; margin-bottom: -20px;"></a>
+                        <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram" class="logo-img"
+                                style="height: 20px; width: 20px;"></a>
+                    </div>
+                    <div style="width: 96%;">
+                        <p class="text-center">&copy; 2023 - Nekuri Naveen</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
+
+
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
