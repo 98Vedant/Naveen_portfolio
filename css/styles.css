@@ -103,6 +103,10 @@
 
   /* Add any additional styling as needed */
 }
+.logo-img:hover {
+  transform: scale(1.2);
+}
+
 .publication-card .card-body p {
   font-size: 16px !important;
 }
@@ -8530,8 +8534,8 @@ fieldset:disabled .btn {
 
 .justify-content-between {
   justify-content: space-between !important;
-  margin-top: -4px;
-  margin-bottom: -20px;
+ margin-top: -4px;
+    margin-bottom: -20px;
 }
 
 .justify-content-around {
